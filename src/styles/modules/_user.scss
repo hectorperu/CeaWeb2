@@ -1,0 +1,9 @@
+.user {
+  @include d-flex-fd-ai-jc-g(row, center, center, 1rem);
+
+  &__img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,27 @@
+.container {
+  // max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-container);
+
+  &--sidebar {
+    height: 100%;
+    padding: 0 0.4rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+      padding: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: var(--tertiary-theme-color);
+    }
+  }
+}
+
+.elements {
+  @include d-flex-fd-ai-jc-g;
+  align-items: center;
+  justify-content: space-between;
+}
