@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 0 var(--padding-container);
 
+  &--form {
+    @include d-flex-fd-ai-jc-g(column, center, initial, 1.5rem);
+  }
+
   &--sidebar {
     height: 100%;
     padding: 0 0.4rem;
@@ -21,7 +25,10 @@
 }
 
 .elements {
-  @include d-flex-fd-ai-jc-g;
-  align-items: center;
-  justify-content: space-between;
+  @include d-flex-fd-ai-jc-g(row, center, space-between, 0);
+
+  &--form {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

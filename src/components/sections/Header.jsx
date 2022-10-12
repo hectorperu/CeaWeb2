@@ -10,7 +10,7 @@ const Header = () => {
           <Link to='/'>
             <img src={logo} alt="logo" width='150px' />
           </Link>
-          <div className="modal">
+          <div>
             <ul className="menu menu--header">
               <li>Item1</li>
               <li>Item1</li>

@@ -6,6 +6,9 @@
   --padding-container: 1rem;
   --primary-border-radius: 8px;
   --primary-font-family: 'Roboto', sans-serif;
+  --primary-button-color: #34a3c1;
+  --secondary-button-color: #28a745;
+  --tertiary-button-color: #dc3545;
 }
 
 .body {

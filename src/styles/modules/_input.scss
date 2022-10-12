@@ -1,0 +1,71 @@
+.group {
+  position: relative;
+  font-size: 1rem;
+
+  &--form {
+    font-size: 0.75rem;
+  }
+
+  &--checkbox {
+    @include d-flex-fd-ai-jc-g(row, center, initial, 0.5rem)
+  }
+}
+
+.input {
+  padding: 0.8em 0.75em;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 0.3em;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1;
+
+  &:focus+label,
+  &:not(:placeholder-shown)+label {
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+    font-size: 0.9em;
+    top: -0.6em
+  }
+
+  &--select {
+    width: 100%;
+  }
+
+  &__checkbox {
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+.label__input {
+  margin: 0;
+  box-sizing: content-box;
+  background-color: white;
+  padding: 0.6em 0.37em;
+  margin: 0.4em 0.37em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  pointer-events: none;
+  transition: all 0.1s;
+
+}
+
+.label__checkbox {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+  font-size: 0.9em;
+  top: -0.7em;
+
+  &--label {
+    line-height: 1;
+  }
+}
